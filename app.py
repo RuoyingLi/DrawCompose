@@ -24,7 +24,9 @@ def strokes():
     json = {
       "version" : 1,
       "language": "en-US",
-      "unit" : "em",
+      "unit" : "cm",
+      "application" : "drawing",
+      "tip" : 'rectangle',
       "strokes": []
     }
     for id, i in enumerate(r):
