@@ -98,7 +98,7 @@ def get_docker_service_and_image(lines):
 
     image_name = search_results[0]['name']
 
-    return {'service' : service_name, 'image' : image_name}
+    return {'service' : service_name.lower(), 'image' : image_name}
     
     
 def interpret(jsonDoc):

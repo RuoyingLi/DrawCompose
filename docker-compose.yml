@@ -2,5 +2,3 @@ version: "3.7"
 services:
   hello:
     image: hello-world
-  hello:
-    image: hello-world
