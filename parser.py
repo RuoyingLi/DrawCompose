@@ -75,9 +75,9 @@ def update_yaml(service):
     return True
 
 
-all_components = collect(['one_docker.json','one_docker.json'])
+# all_components = collect(['one_docker.json','one_docker.json'])
 
-write_yaml(all_components)
+# write_yaml(all_components)
 
 
 
