@@ -111,4 +111,5 @@ def interpret(jsonDoc):
         update_yaml(service)
 
 if __name__ == "__main__":
+    create_yaml()
     interpret('one_docker.json')
