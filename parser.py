@@ -103,7 +103,7 @@ def get_docker_service_and_image(lines):
     
 def interpret(jsonDoc):
     logging.debug("Extracting text lines from json...")
-    objs = extract_objects('one_docker.json')
+    objs = extract_objects(jsonDoc)
     logging.debug("Done.")
     if get_mode(objs) == "docker":
         lines = objs['texts']
