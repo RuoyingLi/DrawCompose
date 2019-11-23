@@ -68,7 +68,7 @@ def create_yaml():
     return True
 
 def update_yaml(service):
-    file = open('docker-compose.yml','a')
+    f = open('docker-compose.yml','a')
     strings = '  %s:\n    image: %s\n'%(service['service'],service['image'])
     f.write(strings)
     f.close()
