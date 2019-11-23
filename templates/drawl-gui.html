@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+ 		<meta charset="UTF-8" />
+		<link rel="icon" href="data:,">
+		<title>YaDl!</title>
+		<style type="text/css">
+		/* * {
+			margin: 0px;
+			padding: 0px;
+			touch-action: none;
+		}
+		*/
+		html, body {
+			overflow: hidden;
+			height: 100%;
+			background-color: #FF0000;
+		}
+
+		/* Disable intrinsic user agent touch behaviors (such as panning or zooming) */
+		#drawCanvas {
+			display: block;
+			border: 1px solid black;
+		}
+
+		#composeCanvas {
+			display: block;
+			border: 1px solid black;
+			background-color: #090909;
+		}
+
+		div.objectwidget {
+			background-color: #00FF00;
+			height: 100px;
+		}
+
+		#container {
+		}
+
+		#infodiv {
+			display: none;
+		}
+
+		</style>
+		<script src="https://code.jquery.com/pep/0.4.3/pep.js" defer></script>
+		<script src="https://cdn.rawgit.com/mozilla/localForage/master/dist/localforage.js" defer></script>
+		<script src="/static/js/main.js" defer></script>
+
+	</head>
+	<body>
+		<div id="container">
+			<div id="composeCanvas1" class="ComposeCanvas" touch-action="none">
+				<div class="objectwidget" id="DummyObject">DummyObject</div>
+				</div>
+			<div id="infoDiv">Info</div>
+			<canvas id="drawCanvas1" class="DrawCanvas" touch-action="none"></canvas>
+			<button id="convertButton" type="button">integrate</button>
+		</div>
+	</body>
+</html>
