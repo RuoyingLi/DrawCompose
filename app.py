@@ -22,7 +22,9 @@ def strokes():
     r = request.json
 
     json = {
+      "version" : 1,
       "language": "en-US",
+      "unit" : "em",
       "strokes": []
     }
     for id, i in enumerate(r):
