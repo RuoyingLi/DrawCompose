@@ -5,10 +5,10 @@ import requests
 app = Flask(__name__)
 
 
-
 def gui_strokes_2_azure_strokes(gui_strokes):
     ret = gui_strokes
     return ret
+
 
 @app.route('/')
 def hello_world():
@@ -24,4 +24,3 @@ def strokes():
     r = requests.put(url, data=example_req_json, headers=headers)
     print(r.text)
     return "<h1>Ok, cool!</h1>"
-

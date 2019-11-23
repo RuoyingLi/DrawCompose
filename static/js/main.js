@@ -123,6 +123,14 @@ function makeDrawCanvas(canvasElement, infoDiv) {
 return canvas;
 }
 
+
+function makeComposeCanvas(canvasElement, infoDiv) {
+};
+
+
+
+
+
 function send_strokes(paths) {
     var strokes = paths;
     fetch("/strokes", {
@@ -139,6 +147,7 @@ function init() {
 	console.log("Initialize canvas...");
 	infoDiv = document.getElementById("infoDiv");
 	canvas = makeDrawCanvas(document.getElementById("drawCanvas"), infoDiv, localStorage);
+	composeCanvas = makeComposeCanvas(document.getElementById("composeCanvas"), infoDiv, localStorage);
 
 	var drawingKey = "DrawingPaths";
 
