@@ -13,4 +13,5 @@ dependencies:
     - pip:
         - azure
         - python-dotenv
+        - docker
     

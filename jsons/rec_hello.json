@@ -1,0 +1,605 @@
+{
+  "recognitionUnits": [
+    {
+      "alternates": [
+        {
+          "category": "inkDrawing",
+          "confidence": 0.6306586,
+          "recognizedString": "rectangle",
+          "rotationAngle": 0.0
+        },
+        {
+          "category": "inkDrawing",
+          "confidence": 0.5938608,
+          "recognizedString": "parallelogram",
+          "rotationAngle": 0.0
+        },
+        {
+          "category": "inkDrawing",
+          "confidence": 0.5276145,
+          "recognizedString": "trapezoid",
+          "rotationAngle": 0.0
+        },
+        {
+          "category": "inkDrawing",
+          "confidence": 0.459822774,
+          "recognizedString": "quadrilateral",
+          "rotationAngle": 0.0
+        },
+        {
+          "category": "inkDrawing",
+          "confidence": 0.244006008,
+          "recognizedString": "diamond",
+          "rotationAngle": 0.0
+        }
+      ],
+      "boundingRectangle": {
+        "height": 40.229999542236328,
+        "topX": 13.75,
+        "topY": 5.5500001907348633,
+        "width": 35.200000762939453
+      },
+      "category": "inkDrawing",
+      "center": {
+        "x": 31.260000228881836,
+        "y": 28.690000534057617
+      },
+      "class": "leaf",
+      "confidence": 1.0,
+      "id": 1,
+      "parentId": 0,
+      "points": [
+        {
+          "x": 11.119999885559082,
+          "y": 10.6899995803833
+        },
+        {
+          "x": 11.119999885559082,
+          "y": 45.590000152587891
+        },
+        {
+          "x": 46.029998779296875,
+          "y": 45.590000152587891
+        },
+        {
+          "x": 46.029998779296875,
+          "y": 10.6899995803833
+        }
+      ],
+      "recognizedObject": "square",
+      "rotatedBoundingRectangle": [
+        {
+          "x": 8.7700004577636719,
+          "y": 44.919998168945313
+        },
+        {
+          "x": 14.789999961853027,
+          "y": 2.1600000858306885
+        },
+        {
+          "x": 50.599998474121094,
+          "y": 7.190000057220459
+        },
+        {
+          "x": 44.590000152587891,
+          "y": 49.950000762939453
+        }
+      ],
+      "rotationAngle": 0.0,
+      "strokeIds": [
+        124,
+        125
+      ]
+    },
+    {
+      "alternates": [
+        {
+          "category": "inkWord",
+          "recognizedString": "1tello"
+        },
+        {
+          "category": "inkWord",
+          "recognizedString": "Hell0"
+        },
+        {
+          "category": "inkWord",
+          "recognizedString": "1tell0"
+        },
+        {
+          "category": "inkWord",
+          "recognizedString": "HellO"
+        },
+        {
+          "category": "inkWord",
+          "recognizedString": "1tellO"
+        },
+        {
+          "category": "inkWord",
+          "recognizedString": "Helto"
+        },
+        {
+          "category": "inkWord",
+          "recognizedString": "Hel10"
+        },
+        {
+          "category": "inkWord",
+          "recognizedString": "Hek0"
+        },
+        {
+          "category": "inkWord",
+          "recognizedString": "Heilo"
+        }
+      ],
+      "boundingRectangle": {
+        "height": 11.659999847412109,
+        "topX": 16.399999618530273,
+        "topY": 16.659999847412109,
+        "width": 23.030000686645508
+      },
+      "category": "inkWord",
+      "class": "leaf",
+      "id": 5,
+      "parentId": 4,
+      "recognizedText": "Hello",
+      "rotatedBoundingRectangle": [
+        {
+          "x": 16.979999542236328,
+          "y": 14.8100004196167
+        },
+        {
+          "x": 40.520000457763672,
+          "y": 17.700000762939453
+        },
+        {
+          "x": 38.919998168945313,
+          "y": 30.770000457763672
+        },
+        {
+          "x": 15.380000114440918,
+          "y": 27.8799991607666
+        }
+      ],
+      "strokeIds": [
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132
+      ]
+    },
+    {
+      "alternates": [
+        {
+          "category": "line",
+          "recognizedString": "1tello"
+        },
+        {
+          "category": "line",
+          "recognizedString": "Hell0"
+        },
+        {
+          "category": "line",
+          "recognizedString": "1tell0"
+        },
+        {
+          "category": "line",
+          "recognizedString": "HellO"
+        },
+        {
+          "category": "line",
+          "recognizedString": "1tellO"
+        },
+        {
+          "category": "line",
+          "recognizedString": "Helto"
+        },
+        {
+          "category": "line",
+          "recognizedString": "Hel10"
+        },
+        {
+          "category": "line",
+          "recognizedString": "Hek0"
+        },
+        {
+          "category": "line",
+          "recognizedString": "Heilo"
+        }
+      ],
+      "boundingRectangle": {
+        "height": 11.659999847412109,
+        "topX": 16.399999618530273,
+        "topY": 16.659999847412109,
+        "width": 23.030000686645508
+      },
+      "category": "line",
+      "childIds": [
+        5
+      ],
+      "class": "container",
+      "id": 4,
+      "parentId": 3,
+      "recognizedText": "Hello",
+      "rotatedBoundingRectangle": [
+        {
+          "x": 16.979999542236328,
+          "y": 14.8100004196167
+        },
+        {
+          "x": 40.520000457763672,
+          "y": 17.700000762939453
+        },
+        {
+          "x": 38.919998168945313,
+          "y": 30.770000457763672
+        },
+        {
+          "x": 15.380000114440918,
+          "y": 27.8799991607666
+        }
+      ],
+      "strokeIds": [
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132
+      ]
+    },
+    {
+      "boundingRectangle": {
+        "height": 11.659999847412109,
+        "topX": 16.399999618530273,
+        "topY": 16.659999847412109,
+        "width": 23.030000686645508
+      },
+      "category": "paragraph",
+      "childIds": [
+        4
+      ],
+      "class": "container",
+      "id": 3,
+      "parentId": 2,
+      "rotatedBoundingRectangle": [
+        {
+          "x": 16.979999542236328,
+          "y": 14.8100004196167
+        },
+        {
+          "x": 40.520000457763672,
+          "y": 17.700000762939453
+        },
+        {
+          "x": 38.919998168945313,
+          "y": 30.770000457763672
+        },
+        {
+          "x": 15.380000114440918,
+          "y": 27.8799991607666
+        }
+      ],
+      "strokeIds": [
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132
+      ]
+    },
+    {
+      "boundingRectangle": {
+        "height": 11.659999847412109,
+        "topX": 16.399999618530273,
+        "topY": 16.659999847412109,
+        "width": 23.030000686645508
+      },
+      "category": "writingRegion",
+      "childIds": [
+        3
+      ],
+      "class": "container",
+      "id": 2,
+      "parentId": 0,
+      "rotatedBoundingRectangle": [
+        {
+          "x": 16.979999542236328,
+          "y": 14.8100004196167
+        },
+        {
+          "x": 40.520000457763672,
+          "y": 17.700000762939453
+        },
+        {
+          "x": 38.919998168945313,
+          "y": 30.770000457763672
+        },
+        {
+          "x": 15.380000114440918,
+          "y": 27.8799991607666
+        }
+      ],
+      "strokeIds": [
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132
+      ]
+    },
+    {
+      "alternates": [
+        {
+          "category": "inkWord",
+          "recognizedString": "Hello -World"
+        },
+        {
+          "category": "inkWord",
+          "recognizedString": "Hello World"
+        },
+        {
+          "category": "inkWord",
+          "recognizedString": "HelloWorld"
+        },
+        {
+          "category": "inkWord",
+          "recognizedString": "Hello-Nord"
+        },
+        {
+          "category": "inkWord",
+          "recognizedString": "Hello -world"
+        },
+        {
+          "category": "inkWord",
+          "recognizedString": "Hello world"
+        },
+        {
+          "category": "inkWord",
+          "recognizedString": "#Hello -World"
+        },
+        {
+          "category": "inkWord",
+          "recognizedString": "Hello -Worlds"
+        },
+        {
+          "category": "inkWord",
+          "recognizedString": "Hello-Word"
+        }
+      ],
+      "boundingRectangle": {
+        "height": 16.680000305175781,
+        "topX": 4.4899997711181641,
+        "topY": 42.060001373291016,
+        "width": 48.959999084472656
+      },
+      "category": "inkWord",
+      "class": "leaf",
+      "id": 9,
+      "parentId": 8,
+      "recognizedText": "Hello-World",
+      "rotatedBoundingRectangle": [
+        {
+          "x": 3.8599998950958252,
+          "y": 44.080001831054688
+        },
+        {
+          "x": 52.819999694824219,
+          "y": 41.919998168945313
+        },
+        {
+          "x": 53.4900016784668,
+          "y": 56.9900016784668
+        },
+        {
+          "x": 4.53000020980835,
+          "y": 59.159999847412109
+        }
+      ],
+      "strokeIds": [
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145
+      ]
+    },
+    {
+      "alternates": [
+        {
+          "category": "line",
+          "recognizedString": "Hello -World"
+        },
+        {
+          "category": "line",
+          "recognizedString": "Hello World"
+        },
+        {
+          "category": "line",
+          "recognizedString": "HelloWorld"
+        },
+        {
+          "category": "line",
+          "recognizedString": "Hello-Nord"
+        },
+        {
+          "category": "line",
+          "recognizedString": "Hello -world"
+        },
+        {
+          "category": "line",
+          "recognizedString": "Hello world"
+        },
+        {
+          "category": "line",
+          "recognizedString": "#Hello -World"
+        },
+        {
+          "category": "line",
+          "recognizedString": "Hello -Worlds"
+        },
+        {
+          "category": "line",
+          "recognizedString": "Hello-Word"
+        }
+      ],
+      "boundingRectangle": {
+        "height": 16.680000305175781,
+        "topX": 4.4899997711181641,
+        "topY": 42.060001373291016,
+        "width": 48.959999084472656
+      },
+      "category": "line",
+      "childIds": [
+        9
+      ],
+      "class": "container",
+      "id": 8,
+      "parentId": 7,
+      "recognizedText": "Hello-World",
+      "rotatedBoundingRectangle": [
+        {
+          "x": 3.8599998950958252,
+          "y": 44.080001831054688
+        },
+        {
+          "x": 52.819999694824219,
+          "y": 41.919998168945313
+        },
+        {
+          "x": 53.4900016784668,
+          "y": 56.9900016784668
+        },
+        {
+          "x": 4.53000020980835,
+          "y": 59.159999847412109
+        }
+      ],
+      "strokeIds": [
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145
+      ]
+    },
+    {
+      "boundingRectangle": {
+        "height": 16.680000305175781,
+        "topX": 4.4899997711181641,
+        "topY": 42.060001373291016,
+        "width": 48.959999084472656
+      },
+      "category": "paragraph",
+      "childIds": [
+        8
+      ],
+      "class": "container",
+      "id": 7,
+      "parentId": 6,
+      "rotatedBoundingRectangle": [
+        {
+          "x": 3.8599998950958252,
+          "y": 44.080001831054688
+        },
+        {
+          "x": 52.819999694824219,
+          "y": 41.919998168945313
+        },
+        {
+          "x": 53.4900016784668,
+          "y": 56.9900016784668
+        },
+        {
+          "x": 4.53000020980835,
+          "y": 59.159999847412109
+        }
+      ],
+      "strokeIds": [
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145
+      ]
+    },
+    {
+      "boundingRectangle": {
+        "height": 16.680000305175781,
+        "topX": 4.4899997711181641,
+        "topY": 42.060001373291016,
+        "width": 48.959999084472656
+      },
+      "category": "writingRegion",
+      "childIds": [
+        7
+      ],
+      "class": "container",
+      "id": 6,
+      "parentId": 0,
+      "rotatedBoundingRectangle": [
+        {
+          "x": 3.8599998950958252,
+          "y": 44.080001831054688
+        },
+        {
+          "x": 52.819999694824219,
+          "y": 41.919998168945313
+        },
+        {
+          "x": 53.4900016784668,
+          "y": 56.9900016784668
+        },
+        {
+          "x": 4.53000020980835,
+          "y": 59.159999847412109
+        }
+      ],
+      "strokeIds": [
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145
+      ]
+    }
+  ]
+}
