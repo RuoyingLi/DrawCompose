@@ -8,6 +8,7 @@ dependencies:
     - numpy
     - nodejs
     - pandas
+    - flask
     - pip
     - pip:
         - azure
