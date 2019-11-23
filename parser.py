@@ -106,7 +106,7 @@ def interpret(jsonDoc):
     objs = extract_objects('one_docker.json')
     logging.debug("Done.")
     if get_mode(objs) == "docker":
-        lines = objs['texs']
+        lines = objs['texts']
         service = get_docker_service_and_image(lines)
         update_yaml(service)
 
