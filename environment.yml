@@ -8,9 +8,11 @@ dependencies:
     - numpy
     - nodejs
     - pandas
+    - flask
     - pip
     - pip:
         - azure
         - python-dotenv
+        - docker
         - opencv-python
     
