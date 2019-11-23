@@ -9,8 +9,9 @@ def extract_objects(json_str):
     for i in range(len(data['recognitionUnits'])):
         obj = data['recognitionUnits'][i]
         if obj['category'] == 'inkDrawing':
-            curr_obj = recShape(obj['center'],obj['recognizedObject'],
-                                obj['alternates'])
+#             curr_obj = recShape(obj['center'],obj['recognizedObject'],
+#                                 obj['alternates'])
+            curr_obj = recShape(obj['recognizedObject'])
             things['shapes'].append(curr_obj)
         elif obj['category'] == 'inkWord':
             curr_obj = recText(obj['boundingRectangle'],obj['recognizedText'],
@@ -24,6 +25,7 @@ def get_mode(things):
         "isoscelesTriangle": "docker",
         "square": "docker",
         "rightTriangle" : "docker",
+        "rectangle" : "docker",
         "equilateralTriangle": "docker"
     }
     return switcher.get(things['shapes'][0].object,"docker")
@@ -49,15 +51,16 @@ class recText():
             self.alternates.append(i['recognizedString'])
         
 class recShape():
-    def __init__ (self, center, recognizedObject, alternates):
+#     def __init__ (self, center, recognizedObject, alternates):
+    def __init__ (self, recognizedObject):
         """
         center: dict{'x','y}
         """
-        self.center = center
+#         self.center = center
         self.object = recognizedObject
-        self.alternates = []
-        for i in alternates:
-            self.alternates.append(i['recognizedString'])
+#         self.alternates = []
+#         for i in alternates:
+#             self.alternates.append(i['recognizedString'])
 
 def create_yaml():
     ymlFile = 'version: "3.7"\nservices:\n'
