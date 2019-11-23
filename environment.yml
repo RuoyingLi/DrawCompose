@@ -9,8 +9,7 @@ dependencies:
     - nodejs
     - pandas
     - pip
-    - yaml
-    - json
     - pip:
         - azure
+        - python-dotenv
     
