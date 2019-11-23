@@ -1,0 +1,25 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	touch-action: none;
+}
+
+html, body { 
+	overflow: hidden;
+	height: 100%
+}
+
+/* Disable intrinsic user agent touch behaviors (such as panning or zooming) */
+#drawCanvas {
+	display: block;
+	border: 1px solid black;
+}
+
+#container {
+}
+
+#infodiv {
+	display: none;
+}
+
+
