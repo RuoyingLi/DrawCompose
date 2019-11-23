@@ -3,9 +3,8 @@ import docker
 import logging
 
 
-def extract_objects(jsonFile):
-    with open(jsonFile) as json_file:
-        data = json.load(json_file)
+def extract_objects(json_str):
+    data = json.loads(json_str)
     things = {'shapes':[],'texts':[]}
     for i in range(len(data['recognitionUnits'])):
         obj = data['recognitionUnits'][i]
@@ -101,9 +100,9 @@ def get_docker_service_and_image(lines):
     return {'service' : service_name.lower(), 'image' : image_name}
     
     
-def interpret(jsonDoc):
+def interpret(jsonstr):
     logging.debug("Extracting text lines from json...")
-    objs = extract_objects(jsonDoc)
+    objs = extract_objects(jsonstr)
     logging.debug("Done.")
     if get_mode(objs) == "docker":
         lines = objs['texts']
@@ -112,4 +111,4 @@ def interpret(jsonDoc):
 
 if __name__ == "__main__":
     create_yaml()
-    interpret('one_docker.json')
+    interpret(open('one_docker.json', 'r').read())

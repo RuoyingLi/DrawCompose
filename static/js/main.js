@@ -138,7 +138,7 @@ function send_strokes(paths) {
 function init() {
 	console.log("Initialize canvas...");
 	infoDiv = document.getElementById("infoDiv");
-	canvas = makeDrawCanvas(document.getElementById("drawCanvas"), infoDiv, localStorage);
+	canvas = makeDrawCanvas(document.getElementById("drawCanvas1"), infoDiv, localStorage);
 
 	var drawingKey = "DrawingPaths";
 
