@@ -29,13 +29,13 @@ def get_mode(things):
     }
     return switcher.get(things['shapes'][0].object,"docker")
 
-def collect(jsonFiles):
-    all_components = []
-    for i in jsonFiles:
-        obj = extract_objects(i)
-        obj = check_type(obj)
-        all_components.append(obj)
-    return all_components
+# def collect(jsonFiles):
+#     all_components = []
+#     for i in jsonFiles:
+#         obj = extract_objects(i)
+#         obj = check_type(obj)
+#         all_components.append(obj)
+#     return all_components
 
 
 class recText():
