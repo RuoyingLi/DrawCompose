@@ -1,0 +1,942 @@
+{
+  "recognitionUnits": [
+    {
+      "alternates": [
+        {
+          "category": "inkDrawing",
+          "confidence": 0.661002457,
+          "recognizedString": "isoscelesTriangle",
+          "rotationAngle": 0.0
+        },
+        {
+          "category": "inkDrawing",
+          "confidence": 0.520882368,
+          "recognizedString": "triangle",
+          "rotationAngle": 0.0
+        },
+        {
+          "category": "inkDrawing",
+          "confidence": 0.221672386,
+          "recognizedString": "rightTriangle",
+          "rotationAngle": 0.0
+        }
+      ],
+      "boundingRectangle": {
+        "height": 54.779998779296875,
+        "topX": 9.7799997329711914,
+        "topY": 3.4300000667572021,
+        "width": 63.779998779296875
+      },
+      "category": "inkDrawing",
+      "center": {
+        "x": 38.669998168945313,
+        "y": 30.700000762939453
+      },
+      "class": "leaf",
+      "confidence": 1.0,
+      "id": 1,
+      "parentId": 0,
+      "points": [
+        {
+          "x": 40.970001220703125,
+          "y": 3.3299999237060547
+        },
+        {
+          "x": 9.6000003814697266,
+          "y": 57.669998168945313
+        },
+        {
+          "x": 72.339996337890625,
+          "y": 57.669998168945313
+        }
+      ],
+      "recognizedObject": "equilateralTriangle",
+      "rotatedBoundingRectangle": [
+        {
+          "x": 9.6999998092651367,
+          "y": 57.659999847412109
+        },
+        {
+          "x": 15.069999694824219,
+          "y": 1.1100000143051147
+        },
+        {
+          "x": 78.389999389648438,
+          "y": 7.119999885559082
+        },
+        {
+          "x": 73.029998779296875,
+          "y": 63.669998168945313
+        }
+      ],
+      "rotationAngle": 0.0,
+      "strokeIds": [
+        197
+      ]
+    },
+    {
+      "alternates": [
+        {
+          "category": "inkWord",
+          "recognizedString": "Hall0"
+        },
+        {
+          "category": "inkWord",
+          "recognizedString": "Hako"
+        },
+        {
+          "category": "inkWord",
+          "recognizedString": "HallO"
+        },
+        {
+          "category": "inkWord",
+          "recognizedString": "Halto"
+        },
+        {
+          "category": "inkWord",
+          "recognizedString": "Hado"
+        },
+        {
+          "category": "inkWord",
+          "recognizedString": "Halco"
+        }
+      ],
+      "boundingRectangle": {
+        "height": 16.940000534057617,
+        "topX": 20.3700008392334,
+        "topY": 36.5099983215332,
+        "width": 34.930000305175781
+      },
+      "category": "inkWord",
+      "class": "leaf",
+      "id": 5,
+      "parentId": 4,
+      "recognizedText": "Hallo",
+      "rotatedBoundingRectangle": [
+        {
+          "x": 19.040000915527344,
+          "y": 39.709999084472656
+        },
+        {
+          "x": 54.5099983215332,
+          "y": 34.830001831054687
+        },
+        {
+          "x": 56.4900016784668,
+          "y": 49.25
+        },
+        {
+          "x": 21.030000686645508,
+          "y": 54.119998931884766
+        }
+      ],
+      "strokeIds": [
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204
+      ]
+    },
+    {
+      "alternates": [
+        {
+          "category": "line",
+          "recognizedString": "Hall0"
+        },
+        {
+          "category": "line",
+          "recognizedString": "Hako"
+        },
+        {
+          "category": "line",
+          "recognizedString": "HallO"
+        },
+        {
+          "category": "line",
+          "recognizedString": "Halto"
+        },
+        {
+          "category": "line",
+          "recognizedString": "Hado"
+        },
+        {
+          "category": "line",
+          "recognizedString": "Halco"
+        }
+      ],
+      "boundingRectangle": {
+        "height": 16.940000534057617,
+        "topX": 20.3700008392334,
+        "topY": 36.5099983215332,
+        "width": 34.930000305175781
+      },
+      "category": "line",
+      "childIds": [
+        5
+      ],
+      "class": "container",
+      "id": 4,
+      "parentId": 3,
+      "recognizedText": "Hallo",
+      "rotatedBoundingRectangle": [
+        {
+          "x": 19.040000915527344,
+          "y": 39.709999084472656
+        },
+        {
+          "x": 54.5099983215332,
+          "y": 34.830001831054687
+        },
+        {
+          "x": 56.4900016784668,
+          "y": 49.25
+        },
+        {
+          "x": 21.030000686645508,
+          "y": 54.119998931884766
+        }
+      ],
+      "strokeIds": [
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204
+      ]
+    },
+    {
+      "boundingRectangle": {
+        "height": 16.940000534057617,
+        "topX": 20.3700008392334,
+        "topY": 36.5099983215332,
+        "width": 34.930000305175781
+      },
+      "category": "paragraph",
+      "childIds": [
+        4
+      ],
+      "class": "container",
+      "id": 3,
+      "parentId": 2,
+      "rotatedBoundingRectangle": [
+        {
+          "x": 19.040000915527344,
+          "y": 39.709999084472656
+        },
+        {
+          "x": 54.5099983215332,
+          "y": 34.830001831054687
+        },
+        {
+          "x": 56.4900016784668,
+          "y": 49.25
+        },
+        {
+          "x": 21.030000686645508,
+          "y": 54.119998931884766
+        }
+      ],
+      "strokeIds": [
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204
+      ]
+    },
+    {
+      "boundingRectangle": {
+        "height": 16.940000534057617,
+        "topX": 20.3700008392334,
+        "topY": 36.5099983215332,
+        "width": 34.930000305175781
+      },
+      "category": "writingRegion",
+      "childIds": [
+        3
+      ],
+      "class": "container",
+      "id": 2,
+      "parentId": 0,
+      "rotatedBoundingRectangle": [
+        {
+          "x": 19.040000915527344,
+          "y": 39.709999084472656
+        },
+        {
+          "x": 54.5099983215332,
+          "y": 34.830001831054687
+        },
+        {
+          "x": 56.4900016784668,
+          "y": 49.25
+        },
+        {
+          "x": 21.030000686645508,
+          "y": 54.119998931884766
+        }
+      ],
+      "strokeIds": [
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204
+      ]
+    },
+    {
+      "alternates": [
+        {
+          "category": "inkDrawing",
+          "confidence": 0.650179565,
+          "recognizedString": "rectangle",
+          "rotationAngle": 0.0
+        },
+        {
+          "category": "inkDrawing",
+          "confidence": 0.606255651,
+          "recognizedString": "parallelogram",
+          "rotationAngle": 0.0
+        },
+        {
+          "category": "inkDrawing",
+          "confidence": 0.502787054,
+          "recognizedString": "trapezoid",
+          "rotationAngle": 0.0
+        },
+        {
+          "category": "inkDrawing",
+          "confidence": 0.431020916,
+          "recognizedString": "quadrilateral",
+          "rotationAngle": 0.0
+        },
+        {
+          "category": "inkDrawing",
+          "confidence": 0.263898849,
+          "recognizedString": "diamond",
+          "rotationAngle": 0.0
+        }
+      ],
+      "boundingRectangle": {
+        "height": 52.930000305175781,
+        "topX": 100.80000305175781,
+        "topY": 2.6400001049041748,
+        "width": 63.779998779296875
+      },
+      "category": "inkDrawing",
+      "center": {
+        "x": 139.3800048828125,
+        "y": 29.3700008392334
+      },
+      "class": "leaf",
+      "confidence": 1.0,
+      "id": 6,
+      "parentId": 0,
+      "points": [
+        {
+          "x": 105.91999816894531,
+          "y": -1.059999942779541
+        },
+        {
+          "x": 105.91999816894531,
+          "y": 54.590000152587891
+        },
+        {
+          "x": 161.58000183105469,
+          "y": 54.590000152587891
+        },
+        {
+          "x": 161.58000183105469,
+          "y": -1.059999942779541
+        }
+      ],
+      "recognizedObject": "square",
+      "rotatedBoundingRectangle": [
+        {
+          "x": 90.860000610351563,
+          "y": 4.679999828338623
+        },
+        {
+          "x": 158.91000366210937,
+          "y": -9.3100004196167
+        },
+        {
+          "x": 171.63999938964844,
+          "y": 52.549999237060547
+        },
+        {
+          "x": 103.58999633789062,
+          "y": 66.550003051757812
+        }
+      ],
+      "rotationAngle": 0.0,
+      "strokeIds": [
+        211,
+        212
+      ]
+    },
+    {
+      "alternates": [
+        {
+          "category": "inkWord",
+          "recognizedString": "Go t"
+        },
+        {
+          "category": "inkWord",
+          "recognizedString": "Go T"
+        },
+        {
+          "category": "inkWord",
+          "recognizedString": "Goo t"
+        },
+        {
+          "category": "inkWord",
+          "recognizedString": "Cr-ot"
+        },
+        {
+          "category": "inkWord",
+          "recognizedString": "Göt"
+        },
+        {
+          "category": "inkWord",
+          "recognizedString": "Ciot"
+        },
+        {
+          "category": "inkWord",
+          "recognizedString": "Go K"
+        },
+        {
+          "category": "inkWord",
+          "recognizedString": "G0t"
+        },
+        {
+          "category": "inkWord",
+          "recognizedString": "Goo T"
+        }
+      ],
+      "boundingRectangle": {
+        "height": 21.709999084472656,
+        "topX": 113.5,
+        "topY": 22.479999542236328,
+        "width": 37.319999694824219
+      },
+      "category": "inkWord",
+      "class": "leaf",
+      "id": 10,
+      "parentId": 9,
+      "recognizedText": "Got",
+      "rotatedBoundingRectangle": [
+        {
+          "x": 115.37999725341797,
+          "y": 22.069999694824219
+        },
+        {
+          "x": 151.6199951171875,
+          "y": 28.299999237060547
+        },
+        {
+          "x": 148.19000244140625,
+          "y": 48.270000457763672
+        },
+        {
+          "x": 111.94999694824219,
+          "y": 42.049999237060547
+        }
+      ],
+      "strokeIds": [
+        213,
+        214,
+        215,
+        217,
+        216
+      ]
+    },
+    {
+      "alternates": [
+        {
+          "category": "line",
+          "recognizedString": "Go t"
+        },
+        {
+          "category": "line",
+          "recognizedString": "Go T"
+        },
+        {
+          "category": "line",
+          "recognizedString": "Goo t"
+        },
+        {
+          "category": "line",
+          "recognizedString": "Cr-ot"
+        },
+        {
+          "category": "line",
+          "recognizedString": "Göt"
+        },
+        {
+          "category": "line",
+          "recognizedString": "Ciot"
+        },
+        {
+          "category": "line",
+          "recognizedString": "Go K"
+        },
+        {
+          "category": "line",
+          "recognizedString": "G0t"
+        },
+        {
+          "category": "line",
+          "recognizedString": "Goo T"
+        }
+      ],
+      "boundingRectangle": {
+        "height": 21.709999084472656,
+        "topX": 113.5,
+        "topY": 22.479999542236328,
+        "width": 37.319999694824219
+      },
+      "category": "line",
+      "childIds": [
+        10
+      ],
+      "class": "container",
+      "id": 9,
+      "parentId": 8,
+      "recognizedText": "Got",
+      "rotatedBoundingRectangle": [
+        {
+          "x": 115.37999725341797,
+          "y": 22.069999694824219
+        },
+        {
+          "x": 151.6199951171875,
+          "y": 28.299999237060547
+        },
+        {
+          "x": 148.19000244140625,
+          "y": 48.270000457763672
+        },
+        {
+          "x": 111.94999694824219,
+          "y": 42.049999237060547
+        }
+      ],
+      "strokeIds": [
+        213,
+        214,
+        215,
+        217,
+        216
+      ]
+    },
+    {
+      "boundingRectangle": {
+        "height": 21.709999084472656,
+        "topX": 113.5,
+        "topY": 22.479999542236328,
+        "width": 37.319999694824219
+      },
+      "category": "paragraph",
+      "childIds": [
+        9
+      ],
+      "class": "container",
+      "id": 8,
+      "parentId": 7,
+      "rotatedBoundingRectangle": [
+        {
+          "x": 115.37999725341797,
+          "y": 22.069999694824219
+        },
+        {
+          "x": 151.6199951171875,
+          "y": 28.299999237060547
+        },
+        {
+          "x": 148.19000244140625,
+          "y": 48.270000457763672
+        },
+        {
+          "x": 111.94999694824219,
+          "y": 42.049999237060547
+        }
+      ],
+      "strokeIds": [
+        213,
+        214,
+        215,
+        217,
+        216
+      ]
+    },
+    {
+      "boundingRectangle": {
+        "height": 21.709999084472656,
+        "topX": 113.5,
+        "topY": 22.479999542236328,
+        "width": 37.319999694824219
+      },
+      "category": "writingRegion",
+      "childIds": [
+        8
+      ],
+      "class": "container",
+      "id": 7,
+      "parentId": 0,
+      "rotatedBoundingRectangle": [
+        {
+          "x": 115.37999725341797,
+          "y": 22.069999694824219
+        },
+        {
+          "x": 151.6199951171875,
+          "y": 28.299999237060547
+        },
+        {
+          "x": 148.19000244140625,
+          "y": 48.270000457763672
+        },
+        {
+          "x": 111.94999694824219,
+          "y": 42.049999237060547
+        }
+      ],
+      "strokeIds": [
+        213,
+        214,
+        215,
+        217,
+        216
+      ]
+    },
+    {
+      "alternates": [
+        {
+          "category": "inkWord",
+          "recognizedString": "Hahah"
+        },
+        {
+          "category": "inkWord",
+          "recognizedString": "Haka"
+        },
+        {
+          "category": "inkWord",
+          "recognizedString": "Hakea"
+        },
+        {
+          "category": "inkWord",
+          "recognizedString": "Ha-ha"
+        },
+        {
+          "category": "inkWord",
+          "recognizedString": "Hakha"
+        },
+        {
+          "category": "inkWord",
+          "recognizedString": "Hahaha"
+        },
+        {
+          "category": "inkWord",
+          "recognizedString": "Hatta"
+        },
+        {
+          "category": "inkWord",
+          "recognizedString": "Hahne"
+        },
+        {
+          "category": "inkWord",
+          "recognizedString": "Hate"
+        }
+      ],
+      "boundingRectangle": {
+        "height": 17.469999313354492,
+        "topX": 14.8100004196167,
+        "topY": 60.849998474121094,
+        "width": 41.549999237060547
+      },
+      "category": "inkWord",
+      "class": "leaf",
+      "id": 14,
+      "parentId": 13,
+      "recognizedText": "Haha",
+      "rotatedBoundingRectangle": [
+        {
+          "x": 13.659999847412109,
+          "y": 62.590000152587891
+        },
+        {
+          "x": 55.270000457763672,
+          "y": 59.520000457763672
+        },
+        {
+          "x": 56.5,
+          "y": 76.199996948242188
+        },
+        {
+          "x": 14.899999618530273,
+          "y": 79.2699966430664
+        }
+      ],
+      "strokeIds": [
+        205,
+        206,
+        207,
+        208,
+        209,
+        210
+      ]
+    },
+    {
+      "alternates": [
+        {
+          "category": "inkWord",
+          "recognizedString": "M W"
+        },
+        {
+          "category": "inkWord",
+          "recognizedString": "M w"
+        },
+        {
+          "category": "inkWord",
+          "recognizedString": "m W"
+        },
+        {
+          "category": "inkWord",
+          "recognizedString": "m w"
+        },
+        {
+          "category": "inkWord",
+          "recognizedString": "NW"
+        },
+        {
+          "category": "inkWord",
+          "recognizedString": "u W"
+        },
+        {
+          "category": "inkWord",
+          "recognizedString": "mw"
+        },
+        {
+          "category": "inkWord",
+          "recognizedString": "Mw"
+        },
+        {
+          "category": "inkWord",
+          "recognizedString": "MWH"
+        }
+      ],
+      "boundingRectangle": {
+        "height": 14.569999694824219,
+        "topX": 107.94999694824219,
+        "topY": 57.669998168945313,
+        "width": 35.459999084472656
+      },
+      "category": "inkWord",
+      "class": "leaf",
+      "id": 15,
+      "parentId": 13,
+      "recognizedText": "MW",
+      "rotatedBoundingRectangle": [
+        {
+          "x": 107.11000061035156,
+          "y": 60.349998474121094
+        },
+        {
+          "x": 143.38999938964844,
+          "y": 57.669998168945313
+        },
+        {
+          "x": 144.3800048828125,
+          "y": 70.9800033569336
+        },
+        {
+          "x": 108.08999633789062,
+          "y": 73.669998168945313
+        }
+      ],
+      "strokeIds": [
+        218,
+        219
+      ]
+    },
+    {
+      "alternates": [
+        {
+          "category": "line",
+          "recognizedString": "Haha M W"
+        },
+        {
+          "category": "line",
+          "recognizedString": "Haha M w"
+        },
+        {
+          "category": "line",
+          "recognizedString": "Haha m W"
+        },
+        {
+          "category": "line",
+          "recognizedString": "Haha m w"
+        },
+        {
+          "category": "line",
+          "recognizedString": "Haha NW"
+        },
+        {
+          "category": "line",
+          "recognizedString": "Haha u W"
+        },
+        {
+          "category": "line",
+          "recognizedString": "Haha mw"
+        },
+        {
+          "category": "line",
+          "recognizedString": "Hahah M W"
+        },
+        {
+          "category": "line",
+          "recognizedString": "Haha Mw"
+        }
+      ],
+      "boundingRectangle": {
+        "height": 20.649999618530273,
+        "topX": 14.8100004196167,
+        "topY": 57.669998168945313,
+        "width": 128.60000610351562
+      },
+      "category": "line",
+      "childIds": [
+        14,
+        15
+      ],
+      "class": "container",
+      "id": 13,
+      "parentId": 12,
+      "recognizedText": "Haha MW",
+      "rotatedBoundingRectangle": [
+        {
+          "x": 13.659999847412109,
+          "y": 62.590000152587891
+        },
+        {
+          "x": 143.05000305175781,
+          "y": 53.029998779296875
+        },
+        {
+          "x": 144.3800048828125,
+          "y": 70.9800033569336
+        },
+        {
+          "x": 14.989999771118164,
+          "y": 80.550003051757813
+        }
+      ],
+      "strokeIds": [
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        218,
+        219
+      ]
+    },
+    {
+      "boundingRectangle": {
+        "height": 20.649999618530273,
+        "topX": 14.8100004196167,
+        "topY": 57.669998168945313,
+        "width": 128.60000610351562
+      },
+      "category": "paragraph",
+      "childIds": [
+        13
+      ],
+      "class": "container",
+      "id": 12,
+      "parentId": 11,
+      "rotatedBoundingRectangle": [
+        {
+          "x": 13.659999847412109,
+          "y": 62.590000152587891
+        },
+        {
+          "x": 143.05000305175781,
+          "y": 53.029998779296875
+        },
+        {
+          "x": 144.3800048828125,
+          "y": 70.9800033569336
+        },
+        {
+          "x": 14.989999771118164,
+          "y": 80.550003051757813
+        }
+      ],
+      "strokeIds": [
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        218,
+        219
+      ]
+    },
+    {
+      "boundingRectangle": {
+        "height": 20.649999618530273,
+        "topX": 14.8100004196167,
+        "topY": 57.669998168945313,
+        "width": 128.60000610351562
+      },
+      "category": "writingRegion",
+      "childIds": [
+        12
+      ],
+      "class": "container",
+      "id": 11,
+      "parentId": 0,
+      "rotatedBoundingRectangle": [
+        {
+          "x": 13.659999847412109,
+          "y": 62.590000152587891
+        },
+        {
+          "x": 143.05000305175781,
+          "y": 53.029998779296875
+        },
+        {
+          "x": 144.3800048828125,
+          "y": 70.9800033569336
+        },
+        {
+          "x": 14.989999771118164,
+          "y": 80.550003051757813
+        }
+      ],
+      "strokeIds": [
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        218,
+        219
+      ]
+    }
+  ]
+}
