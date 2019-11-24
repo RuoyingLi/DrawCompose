@@ -17,6 +17,15 @@ def gui_strokes_2_azure_strokes(gui_strokes):
 def hello_world():
     return render_template("drawl-gui.html")
 
+@app.route("/command", methods=["POST", "GET"])
+def cmd():
+    r = request.json
+    if r["cmd"] == "submit":
+        pass
+    elif r["cmd"] == "undo":
+        pass
+    else:
+        app.logger.error("Unknown Command! you dummy!")
 
 @app.route("/strokes", methods=["POST", "GET"])
 def strokes():
