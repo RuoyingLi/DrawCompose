@@ -101,9 +101,16 @@ def get_docker_service_and_image(lines):
     image_name = search_results[0]['name']
 
     return {'service' : service_name.lower(), 'image' : image_name}
-    
+
+def delete_last_two_lines():
+    file = open("docker-compose.yml")
+    lines = file.readlines()
+    lines = lines[:-2]
+    file.writelines(lines)
+    return True
     
 def interpret(jsonstr):
+    
     logging.debug("Extracting text lines from json...")
     objs = extract_objects(jsonstr)
     logging.debug("Done.")
