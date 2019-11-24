@@ -135,6 +135,8 @@ function send_strokes(paths) {
     });
 }
 
+
+
 function init() {
 	console.log("Initialize canvas...");
 	infoDiv = document.getElementById("infoDiv");
@@ -168,6 +170,14 @@ function init() {
 
 	}).catch(function(err) {
 		console.log("ERROR loading drawing: " + err);
+	});
+
+	document.getElementById("commitButton").addEventListener("click", (e) => {
+		console.log("Commit");
+	});
+
+	document.getElementById("undoButton").addEventListener("click", (e) => {
+		console.log("undo");
 	});
 }
 

@@ -26,6 +26,8 @@ html, body {
 div.objectwidget {
 	background-color: #00FF00;
 	height: 100px;
+	position: absolute;
+	z-index: 9;
 }
 
 #container {
