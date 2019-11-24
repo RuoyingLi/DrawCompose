@@ -59,7 +59,11 @@ def strokes():
     app.logger.debug("Reply: {}".format(r.text))
     if not 'error' in r.text:
         app.logger.info("Interpreting json...")
-        interpret(r.text)
+        try:
+            interpret(r.text)
+        except:
+            app.logger.info("Nothing to interpret.")
+
         app.logger.info("Done.")
     else:
         app.logger.info("Request returned error")
