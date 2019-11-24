@@ -190,7 +190,7 @@ function init() {
 		var paths = canvas.paths;
 		committed_objects.push(paths);
 		canvas.paths = new Array();
-    	fetch("/cmd", {
+    	fetch("/command", {
         	method: "post",
         	headers: {
             	'Accept': 'application/json',
@@ -203,7 +203,7 @@ function init() {
 
 	document.getElementById("undoButton").addEventListener("click", (e) => {
 		console.log("undo");
-	    	fetch("/cmd", {
+	    	fetch("/command", {
         	method: "post",
         	headers: {
             	'Accept': 'application/json',
