@@ -48,6 +48,7 @@ def strokes():
     }
     js['strokes'] = []
     c = 1
+    c = 0.019
     for id, i in enumerate(r):
         print("stroke: {} Length: {} : {}".format(id, len(i), i))
         points = " ".join([str(c*j['x']) + ", " + str(c*j['y']) + "," for j in i])[:-1]
