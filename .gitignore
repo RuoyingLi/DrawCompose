@@ -1,6 +1,7 @@
 # Own
 docker-compose.yml
 .DS_Store
+.current_service
 *.swp
 # Byte-compiled / optimized / DLL files
 __pycache__/
