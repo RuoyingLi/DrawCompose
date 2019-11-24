@@ -99,10 +99,7 @@ function makeDrawCanvas(canvasElement, infoDiv) {
 
 	canvas.resize = function () {
 		var offset = canvasElement.parentElement.getBoundingClientRect();
-		var fillStyle = ctx.fillStyle;
-		ctx.fillStyle = "blue";
-		ctx.fillRect(0, 0, canvasElement.width, canvasElement.height);
-		ctx.fillStyle = fillStyle;
+		canvas.clearCanvas();
 		//canvasElement.width = document.documentElement.clientWidth-50;
 		//canvasElement.height = document.documentElement.clientHeight-50;
 		canvas.reDraw();
@@ -124,13 +121,19 @@ function makeDrawCanvas(canvasElement, infoDiv) {
 		//canvas.paths.push(points);
 	};
 
+	canvas.clearCanvas = function() {
+		console.log("Clearing canvas");
+		ctx.clearRect(0, 0, canvasElement.width, canvasElement.height);
+	};
+	
 	canvas.resetCanvas = function() {
 		console.log("Resetting canvas");	
-		var fillStyle = ctx.fillStyle;
+		canvas.clearCanvas()
+		/*var fillStyle = ctx.fillStyle;
 		ctx.fillStyle = "blue";
 		ctx.fillRect(0, 0, canvasElement.width, canvasElement.height);
 		ctx.fillStyle = fillStyle;
-
+		*/
 	};
 
 	return canvas;

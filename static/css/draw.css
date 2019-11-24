@@ -12,13 +12,11 @@ html, body {
 }
 
 /* Disable intrinsic user agent touch behaviors (such as panning or zooming) */
-.drawCanvas {
+#drawCanvas1 {
 	display: block;
 	position: absolute;
 	width: 1000px;
 	height: 600px;
-	bottom: 0px;
-	right: 0px;
 	border: 1px solid black;
 }
 
@@ -28,6 +26,15 @@ html, body {
 	background-color: #090909;
 }
 
+
+#commitButton #undoButton {
+	display: block;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+
+
 div.objectwidget {
 	background-color: #00FF00;
 	height: 100px;
@@ -36,7 +43,8 @@ div.objectwidget {
 }
 
 #container {
-	background-color: #050505;
+	background-image: linear-gradient(-45deg, #F5F0F0, white);
+	
 	height: 100%;
 }
 
