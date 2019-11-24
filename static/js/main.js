@@ -102,6 +102,8 @@ function makeDrawCanvas(canvasElement, infoDiv) {
 		canvas.clearCanvas();
 		//canvasElement.width = document.documentElement.clientWidth-50;
 		//canvasElement.height = document.documentElement.clientHeight-50;
+		canvasElement.width = 800;
+		canvasElement.height = 600;
 		canvas.reDraw();
 	};
 	window.addEventListener("resize", canvas.resize, false);
