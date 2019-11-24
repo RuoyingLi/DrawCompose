@@ -126,26 +126,31 @@ function makeDrawCanvas(canvasElement, infoDiv) {
 
 	canvas.resetCanvas = function() {
 		console.log("Resetting canvas");	
+		var fillStyle = ctx.fillStyle;
+		ctx.fillStyle = "blue";
+		ctx.fillRect(0, 0, canvasElement.width, canvasElement.height);
+		ctx.fillStyle = fillStyle;
+
 	};
 
-return canvas;
+	return canvas;
 }
 
 function send_strokes(paths) {
-    var strokes = paths;
-    fetch("/strokes", {
-        method: "post",
-        headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(strokes)
-    });
+	var strokes = paths;
+	fetch("/strokes", {
+		method: "post",
+		headers: {
+			'Accept': 'application/json',
+			'Content-Type': 'application/json'
+		},
+		body: JSON.stringify(strokes)
+	});
 }
 
 
 function makeObjectDiv(posX, posY, data) {
-	
+
 }
 
 
@@ -159,58 +164,59 @@ function init() {
 
 	localforage.getItem("CurrentDrawing").then(localforage.getItem)
 		.then( function(paths) {
-		if (paths) {
-			console.log("Loaded " + paths.length + " paths from local storage!");
-			canvas.paths = paths;
-			paths.forEach(canvas.drawPointArray);
-		}
+			if (paths) {
+				console.log("Loaded " + paths.length + " paths from local storage!");
+				canvas.paths = paths;
+				paths.forEach(canvas.drawPointArray);
+			}
 
-		canvas.onDrawNewPoint = function(point) {
-		};
+			canvas.onDrawNewPoint = function(point) {
+			};
 
-		canvas.onBeginPath = function() {
-			console.log("Beginning new Path");
-		};
+			canvas.onBeginPath = function() {
+				console.log("Beginning new Path");
+			};
 
-		canvas.onPathFinish = function(path) {
-			console.log("Path finished" + JSON.stringify(path));
-			localforage.setItem("DrawingPaths", canvas.paths);
-            console.log("Posting strokes to Server");
-            send_strokes(canvas.paths);
-		};
+			canvas.onPathFinish = function(path) {
+				console.log("Path finished" + JSON.stringify(path));
+				localforage.setItem("DrawingPaths", canvas.paths);
+				console.log("Posting strokes to Server");
+				send_strokes(canvas.paths);
+			};
 
-		canvas.resize();
+			canvas.resize();
 
-	}).catch(function(err) {
-		console.log("ERROR loading drawing: " + err);
-	});
+		}).catch(function(err) {
+			console.log("ERROR loading drawing: " + err);
+		});
 
 	document.getElementById("commitButton").addEventListener("click", (e) => {
 		console.log("Commit");
 		var paths = canvas.paths;
 		committed_objects.push(paths);
 		canvas.paths = new Array();
-    	fetch("/command", {
-        	method: "post",
-        	headers: {
-            	'Accept': 'application/json',
-            	'Content-Type': 'application/json'
-        	},
+		fetch("/command", {
+			method: "post",
+			headers: {
+				'Accept': 'application/json',
+				'Content-Type': 'application/json'
+			},
 			body: JSON.stringify({cmd: "commit"})
-    	});
+		});
 		//make
 	});
 
 	document.getElementById("undoButton").addEventListener("click", (e) => {
 		console.log("undo");
-	    	fetch("/command", {
-        	method: "post",
-        	headers: {
-            	'Accept': 'application/json',
-            	'Content-Type': 'application/json'
-        	},
+		fetch("/command", {
+			method: "post",
+			headers: {
+				'Accept': 'application/json',
+				'Content-Type': 'application/json'
+			},
 			body: JSON.stringify({cmd: "undo"})
-    	});
+		});
+		canvas.resetCanvas();
 	});
 }
 
