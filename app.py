@@ -26,14 +26,15 @@ def strokes():
     js = {
       "version" : 1,
       "language": "en-US",
-      "unit" : "mm",
+      "unit" : "cm",
       "application" : "drawing",
       #"tip" : 'rectangle',
       "strokes": None
     }
     js['strokes'] = []
+    c = 0.0031661226
     for id, i in enumerate(r):
-        points = " ".join([str(j['x']) + ", " + str(j['y']) + "," for j in i])[:-1]
+        points = " ".join([str(c*j['x']) + ", " + str(c*j['y']) + "," for j in i])[:-1]
         js['strokes'].append({'id' : id, 'points' : points})
 
     headers = {"Ocp-Apim-Subscription-Key": KEY}
