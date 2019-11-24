@@ -124,6 +124,10 @@ function makeDrawCanvas(canvasElement, infoDiv) {
 		//canvas.paths.push(points);
 	};
 
+	canvas.resetCanvas = function() {
+		console.log("Resetting canvas");	
+	};
+
 return canvas;
 }
 
@@ -140,12 +144,17 @@ function send_strokes(paths) {
 }
 
 
+function makeObjectDiv(posX, posY, data) {
+	
+}
+
 
 function init() {
 	console.log("Initialize canvas...");
 	infoDiv = document.getElementById("infoDiv");
 	canvas = makeDrawCanvas(document.getElementById("drawCanvas1"), infoDiv, localStorage);
 
+	var committed_objects = [];
 	var drawingKey = "DrawingPaths";
 
 	localforage.getItem("CurrentDrawing").then(localforage.getItem)
@@ -178,10 +187,30 @@ function init() {
 
 	document.getElementById("commitButton").addEventListener("click", (e) => {
 		console.log("Commit");
+		var paths = canvas.paths;
+		committed_objects.push(paths);
+		canvas.paths = new Array();
+    	fetch("/cmd", {
+        	method: "post",
+        	headers: {
+            	'Accept': 'application/json',
+            	'Content-Type': 'application/json'
+        	},
+			body: JSON.stringify({cmd: "commit"})
+    	});
+		//make
 	});
 
 	document.getElementById("undoButton").addEventListener("click", (e) => {
 		console.log("undo");
+	    	fetch("/cmd", {
+        	method: "post",
+        	headers: {
+            	'Accept': 'application/json',
+            	'Content-Type': 'application/json'
+        	},
+			body: JSON.stringify({cmd: "undo"})
+    	});
 	});
 }
 
