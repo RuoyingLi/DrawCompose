@@ -25,6 +25,7 @@ def command():
     if r["cmd"] == "commit":
         app.logger.info("Submitting");
         update_yaml()
+        dismiss_current_service()
     elif r["cmd"] == "undo":
         app.logger.info("Undo invoked");
         dismiss_current_service()
