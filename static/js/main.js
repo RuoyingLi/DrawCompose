@@ -99,8 +99,12 @@ function makeDrawCanvas(canvasElement, infoDiv) {
 
 	canvas.resize = function () {
 		var offset = canvasElement.parentElement.getBoundingClientRect();
-		canvasElement.width = document.documentElement.clientWidth-50;
-		canvasElement.height = document.documentElement.clientHeight-50;
+		var fillStyle = ctx.fillStyle;
+		ctx.fillStyle = "blue";
+		ctx.fillRect(0, 0, canvasElement.width, canvasElement.height);
+		ctx.fillStyle = fillStyle;
+		//canvasElement.width = document.documentElement.clientWidth-50;
+		//canvasElement.height = document.documentElement.clientHeight-50;
 		canvas.reDraw();
 	};
 	window.addEventListener("resize", canvas.resize, false);
