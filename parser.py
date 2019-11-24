@@ -85,7 +85,7 @@ def update_yaml():
     ls = s.readlines()
     s.close()
     f = open('docker-compose.yml', 'a')
-    f.writelines(strings)
+    f.writelines(ls)
     f.close()
     return True
 
