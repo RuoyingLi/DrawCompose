@@ -1,9 +1,11 @@
 from settings import KEY, ENDPOINT
 from flask import Flask, escape, request, render_template
 import requests
-from parser import interpret, create_yaml
+from parser import interpret, create_yaml, update_yaml, dismiss_current_service
 import json
 
+
+dismiss_current_service()
 create_yaml()
 app = Flask(__name__)
 
@@ -21,9 +23,9 @@ def hello_world():
 def cmd():
     r = request.json
     if r["cmd"] == "submit":
-        pass
+        update_yaml()
     elif r["cmd"] == "undo":
-        pass
+        dismiss_current_service()
     else:
         app.logger.error("Unknown Command! you dummy!")
 
@@ -60,7 +62,8 @@ def strokes():
         app.logger.info("Interpreting json...")
         try:
             interpret(r.text)
-        except:
+        except Exception as e:
+            app.logger.debug(e)
             app.logger.info("Nothing to interpret.")
 
         app.logger.info("Done.")
