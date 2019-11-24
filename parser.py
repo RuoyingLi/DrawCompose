@@ -1,6 +1,5 @@
 import json
 import docker
-import logging
 
 
 def extract_objects(json_str):
@@ -69,13 +68,26 @@ def create_yaml():
     f.close()
     return True
 
-def update_yaml(service):
-    f = open('docker-compose.yml','a')
+def update_service(service):
+    f = open('.current_service','w')
     strings = '  %s:\n    image: %s\n'%(service['service'],service['image'])
     f.write(strings)
     f.close()
     return True
 
+def dismiss_current_service():
+    f = open('.current_service','w')
+    f.close()
+    return True
+
+def update_yaml():
+    s = open('.current_service','r')
+    ls = s.readlines()
+    s.close()
+    f = open('docker-compose.yml', 'a')
+    f.writelines(strings)
+    f.close()
+    return True
 
 # all_components = collect(['one_docker.json','one_docker.json'])
 
@@ -87,7 +99,6 @@ def update_yaml(service):
 
 
 def get_docker_service_and_image(lines):
-    logging.debug("Extracting service name and image name from lines..")
     client = docker.from_env()
     
        
@@ -110,15 +121,13 @@ def delete_last_two_lines():
     return True
     
 def interpret(jsonstr):
-    
-    logging.debug("Extracting text lines from json...")
     objs = extract_objects(jsonstr)
-    logging.debug("Done.")
     if get_mode(objs) == "docker":
         lines = objs['texts']
         service = get_docker_service_and_image(lines)
-        update_yaml(service)
+        update_service(service)
 
 if __name__ == "__main__":
     create_yaml()
     interpret(open('one_docker.json', 'r').read())
+    update_yaml()
