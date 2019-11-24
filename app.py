@@ -41,13 +41,12 @@ def strokes():
       "strokes": None
     }
     js['strokes'] = []
-    c = 0.01840222799
+    c = 1
     for id, i in enumerate(r):
         print("stroke: {} Length: {} : {}".format(id, len(i), i))
-        if len(i) == 0: 
-            continue
         points = " ".join([str(c*j['x']) + ", " + str(c*j['y']) + "," for j in i])[:-1]
-        js['strokes'].append({'id' : id, 'points' : points})
+        if points != "":
+            js['strokes'].append({'id' : id, 'points' : points})
 
     headers = {"Ocp-Apim-Subscription-Key": KEY}
     url = ENDPOINT + "inkrecognizer/v1.0-preview/recognize"
