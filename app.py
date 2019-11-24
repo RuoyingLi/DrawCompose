@@ -21,15 +21,17 @@ def hello_world():
 @app.route("/strokes", methods=["POST", "GET"])
 def strokes():
     r = request.json
+    app.logger.debug("App requests: {}".format(r))
 
     js = {
       "version" : 1,
       "language": "en-US",
-      "unit" : "cm",
+      "unit" : "mm",
       "application" : "drawing",
-      "tip" : 'rectangle',
-      "strokes": []
+      #"tip" : 'rectangle',
+      "strokes": None
     }
+    js['strokes'] = []
     for id, i in enumerate(r):
         points = " ".join([str(j['x']) + ", " + str(j['y']) + "," for j in i])[:-1]
         js['strokes'].append({'id' : id, 'points' : points})
