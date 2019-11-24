@@ -1,5 +1,5 @@
 from settings import KEY, ENDPOINT
-from flask import Flask, escape, request, render_template
+from flask import Flask, escape, request, render_template, jsonify
 import requests
 from parser import interpret, create_yaml, update_yaml, dismiss_current_service
 import json
@@ -20,14 +20,17 @@ def hello_world():
     return render_template("drawl-gui.html")
 
 @app.route("/command", methods=["POST", "GET"])
-def cmd():
+def command():
     r = request.json
-    if r["cmd"] == "submit":
+    if r["cmd"] == "commit":
+        app.logger.info("Submitting");
         update_yaml()
     elif r["cmd"] == "undo":
+        app.logger.info("Undo invoked");
         dismiss_current_service()
     else:
         app.logger.error("Unknown Command! you dummy!")
+    return jsonify({"success": True})
 
 @app.route("/strokes", methods=["POST", "GET"])
 def strokes():

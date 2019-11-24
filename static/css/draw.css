@@ -12,8 +12,13 @@ html, body {
 }
 
 /* Disable intrinsic user agent touch behaviors (such as panning or zooming) */
-#drawCanvas {
+.drawCanvas {
 	display: block;
+	position: absolute;
+	width: 1000px;
+	height: 600px;
+	bottom: 0px;
+	right: 0px;
 	border: 1px solid black;
 }
 
@@ -31,7 +36,10 @@ div.objectwidget {
 }
 
 #container {
+	background-color: #050505;
+	height: 100%;
 }
+
 
 #infodiv {
 	display: none;

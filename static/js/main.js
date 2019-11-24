@@ -99,8 +99,12 @@ function makeDrawCanvas(canvasElement, infoDiv) {
 
 	canvas.resize = function () {
 		var offset = canvasElement.parentElement.getBoundingClientRect();
-		canvasElement.width = document.documentElement.clientWidth-50;
-		canvasElement.height = document.documentElement.clientHeight-50;
+		var fillStyle = ctx.fillStyle;
+		ctx.fillStyle = "blue";
+		ctx.fillRect(0, 0, canvasElement.width, canvasElement.height);
+		ctx.fillStyle = fillStyle;
+		//canvasElement.width = document.documentElement.clientWidth-50;
+		//canvasElement.height = document.documentElement.clientHeight-50;
 		canvas.reDraw();
 	};
 	window.addEventListener("resize", canvas.resize, false);
@@ -120,6 +124,10 @@ function makeDrawCanvas(canvasElement, infoDiv) {
 		//canvas.paths.push(points);
 	};
 
+	canvas.resetCanvas = function() {
+		console.log("Resetting canvas");	
+	};
+
 return canvas;
 }
 
@@ -136,12 +144,17 @@ function send_strokes(paths) {
 }
 
 
+function makeObjectDiv(posX, posY, data) {
+	
+}
+
 
 function init() {
 	console.log("Initialize canvas...");
 	infoDiv = document.getElementById("infoDiv");
 	canvas = makeDrawCanvas(document.getElementById("drawCanvas1"), infoDiv, localStorage);
 
+	var committed_objects = [];
 	var drawingKey = "DrawingPaths";
 
 	localforage.getItem("CurrentDrawing").then(localforage.getItem)
@@ -174,10 +187,30 @@ function init() {
 
 	document.getElementById("commitButton").addEventListener("click", (e) => {
 		console.log("Commit");
+		var paths = canvas.paths;
+		committed_objects.push(paths);
+		canvas.paths = new Array();
+    	fetch("/command", {
+        	method: "post",
+        	headers: {
+            	'Accept': 'application/json',
+            	'Content-Type': 'application/json'
+        	},
+			body: JSON.stringify({cmd: "commit"})
+    	});
+		//make
 	});
 
 	document.getElementById("undoButton").addEventListener("click", (e) => {
 		console.log("undo");
+	    	fetch("/command", {
+        	method: "post",
+        	headers: {
+            	'Accept': 'application/json',
+            	'Content-Type': 'application/json'
+        	},
+			body: JSON.stringify({cmd: "undo"})
+    	});
 	});
 }
 
